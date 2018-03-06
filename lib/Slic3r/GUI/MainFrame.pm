@@ -206,7 +206,7 @@ sub _init_tabpanel {
             'X-Api-Key' => $config->octoprint_apikey,
         );
         if ($res->is_success) {
-            Slic3r::GUI::show_info($self, L("Connection to OctoPrint works correctly."), _L("Success!"));
+            Slic3r::GUI::show_info($self, L("Connection to OctoPrint works correctly."), L("Success!"));
         } else {
             Slic3r::GUI::show_error($self,
                 L("I wasn't able to connect to OctoPrint (") . $res->status_line . 
